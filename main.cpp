@@ -99,6 +99,6 @@ int main(int argc , char** argv) {
     //}
     cout << sizeof(V[1]) << endl;
     printf("%lf\n",(float)((stop.tv_sec - start.tv_sec)*1000000 + stop.tv_usec - start.tv_usec)/1000000);
-    free(V);
-    free(W);
+    delete[] V;
+    delete[] W;
 }
